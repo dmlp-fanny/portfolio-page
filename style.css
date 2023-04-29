@@ -1,3 +1,4 @@
+/* Declaring general */
 html {
   box-sizing: border-box;
 }
@@ -7,3 +8,250 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  background-color: whitesmoke;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+
+.mylogo {
+  flex: 1;
+  text-align: center;
+  overflow: hidden;
+  color: #1d7874;
+  padding-bottom: 0.5rem;
+  font-family: "Orbitron";
+}
+
+.mylogo img {
+  height: 100%;
+}
+
+.navbar {
+  flex: 3;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: stretch;
+}
+
+.navbar_item {
+  text-align: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #0a2342;
+  color: whitesmoke;
+}
+
+.navbar a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-image: url(img/bg.jpg);
+  background-color: #0a2342;
+  background-size: cover;
+  height: 20rem;
+  margin-top: 5%;
+}
+
+header section {
+  color: #b0d0d3;
+  font-size: 2rem;
+  font-family: "Orbitron";
+  padding-top: 10%;
+}
+
+header > section > span {
+  color: #1d7874;
+  font-weight: 700;
+  text-decoration: underline 2px #b0d0d3;
+}
+/* Main page padding */
+.workflow,
+.phases_container,
+#myskills,
+#portfolio,
+#aboutme,
+#socialmedia {
+  padding: 3rem 15% 3rem 15%;
+}
+/* Workflow section */
+
+.workflow {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Phases */
+
+.phases_container {
+  display: flex;
+  flex-direction: row;
+  background-color: #0a2342;
+  padding-top: 0;
+}
+
+.semi-circle {
+  width: 7rem;
+  height: 3.5rem;
+  background-color: whitesmoke;
+  border-radius: 0 0 3.5rem 3.5rem;
+}
+
+.phases__items {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phases_container h3 {
+  font-size: 1.2rem;
+  color: #1d7874;
+}
+
+.phases_container p {
+  font-size: 0.8rem;
+}
+
+/* My Skills */
+#myskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myskills h2 {
+  color: #1d7874;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 1rem;
+}
+
+.skills__name {
+  width: 120px;
+  background-color: #0a2342;
+  color: #b0d0d3;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.skills__progress {
+  width: 100%;
+  background-color: #b0d0d3;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills__progress_number {
+  color: #0a2342;
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.skills__progress_html {
+  background-color: #1d7874;
+  width: 80%;
+}
+
+.skills__progress_css {
+  background-color: #1d7874;
+  width: 80%;
+}
+
+.skills__progress_js {
+  background-color: #1d7874;
+  width: 40%;
+}
+
+/* My portfolio */
+#portfolio {
+  background-color: #1d7874;
+}
+
+.portfolio__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.portfolio__items {
+  background-color: lightgrey;
+  width: 200px;
+  height: 150px;
+  margin: 0.5rem;
+}
+
+#portfolio h2 {
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+/* About me section */
+#aboutme h2 {
+  text-transform: uppercase;
+}
+
+.aboutme_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aboutme_items:last-child {
+  flex: 1;
+
+  text-align: left;
+  padding-left: 2rem;
+}
+.aboutme_items:first-child {
+  background-color: #b0d0d3;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  display: flex;
+}
+
+/* Social Media */
+#socialmedia {
+  background-color: #b0d0d3;
+}
+
+.socialmedia__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#socialmedia h3 {
+  color: black;
+  text-transform: uppercase;
+}
+
+#socialmedia img {
+  width: 70%;
+  overflow: hidden;
+}
+
+/* Contact Form */
