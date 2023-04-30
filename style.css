@@ -86,7 +86,8 @@ header > section > span {
 #myskills,
 #portfolio,
 #aboutme,
-#socialmedia {
+#socialmedia,
+#contact {
   padding: 3rem 15% 3rem 15%;
 }
 /* Workflow section */
@@ -218,21 +219,25 @@ header > section > span {
   flex-direction: row;
   justify-content: space-between;
 }
-.aboutme_items:last-child {
-  flex: 1;
 
-  text-align: left;
-  padding-left: 2rem;
-}
 .aboutme_items:first-child {
   background-color: #b0d0d3;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-
+  overflow: hidden;
   display: flex;
 }
 
+.aboutme_items:last-child {
+  flex: 1;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.aboutme_items img {
+  width: 100%;
+}
 /* Social Media */
 #socialmedia {
   background-color: #b0d0d3;
@@ -255,3 +260,59 @@ header > section > span {
 }
 
 /* Contact Form */
+#contact {
+  background-color: #0a2342;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact h2 {
+  text-transform: uppercase;
+}
+.contact__container {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#contact button {
+  width: 100%;
+  background-color: #1d7874;
+  border: none;
+  font-family: "Orbitron";
+  color: whitesmoke;
+  margin: 1rem 0 1rem 0;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+#contact label {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+input {
+  width: 48%;
+  background-color: #0a2342;
+  padding: 12px 0;
+  border: none;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+/* Footer */
+
